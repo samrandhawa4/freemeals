@@ -91,7 +91,7 @@
     methods: {
       onSubmit () {
         this.loading = true
-        this.$http.post('http://127.0.0.1:8000/api/signin',
+        this.$http.post('http://codedegg.com/api/signin',
             { email: this.email, password: this.pass },
             )
             .then(
