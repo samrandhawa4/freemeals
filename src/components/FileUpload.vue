@@ -115,7 +115,7 @@ export default{
     },
     getPhoto (photo) {
       if (photo) {
-        let image = 'http://127.0.0.1:8000/gallery/posts/thumbs/' + photo.photo
+        let image = 'http://codedegg.com/gallery/posts/thumbs/' + photo.photo
         return image
       }
     },
