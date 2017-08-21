@@ -44,7 +44,7 @@
       },
       getPhoto (photo) {
         if (photo) {
-          return 'http://127.0.0.1:8000/gallery/posts/thumbs/' + photo[0].photo
+          return 'http://codedegg.com/gallery/posts/thumbs/' + photo[0].photo
         }
       }
     }
