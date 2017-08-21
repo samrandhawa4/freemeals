@@ -105,7 +105,7 @@
     methods: {
       signup () {
         this.loading = true
-        this.$http.post('http://127.0.0.1:8000/api/signup',
+        this.$http.post('http://codedegg.com/api/signup',
           { fname: this.fname,
             laname: this.laname,
             email: this.email,
