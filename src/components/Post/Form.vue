@@ -90,7 +90,7 @@ import Pickers from './Pickers'
 import FileUpload from '../FileUpload'
 import Snackbar from '../Snackbar'
 const token = localStorage.getItem('token')
-const URL = 'http://127.0.0.1:8000/api/'
+const URL = 'http://codedegg.com/api/'
 export default {
   components: {
     'app-picker': Pickers,
