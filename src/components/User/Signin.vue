@@ -91,7 +91,7 @@
     methods: {
       onSubmit () {
         this.loading = true
-        this.$http.post(URL+'signin',
+        this.$http.post(URL + 'signin',
             { email: this.email, password: this.pass },
             )
             .then(
