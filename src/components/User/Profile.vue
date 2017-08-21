@@ -64,7 +64,7 @@
  </v-container>
 </template>
 <script>
-  const URL = 'http://127.0.0.1:8000/api/'
+  const URL = 'http://codedegg.com/api/'
   const token = localStorage.getItem('token')
   import Snackbar from '../Snackbar'
   export default {
@@ -117,12 +117,12 @@
       },
       getPhoto (photo) {
         if (photo) {
-          return 'http://127.0.0.1:8000/gallery/user/thumbs/' + photo
+          return 'http://codedegg.com/gallery/user/thumbs/' + photo
         }
       },
       onSubmit () {
         this.loading = true
-        this.$http.post('http://127.0.0.1:8000/api/signup',
+        this.$http.post('http://codedegg.com/api/signup',
             { fname: this.fname, laname: this.laname, email: this.email, photo: this.photo.generateDataUrl() },
             )
             .then(
