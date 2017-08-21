@@ -51,7 +51,7 @@
 
 <script>
   const token = localStorage.getItem('token')
-  const URL = 'http://127.0.0.1:8000/api/'
+  const URL = 'http://codedegg.com/api/'
   import Post from './Post'
   import Form from './Form'
   export default {
