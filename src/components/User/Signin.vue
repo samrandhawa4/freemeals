@@ -63,7 +63,7 @@
  </v-container>
 </template>
 <script>
-  const URL = 'http://127.0.0.1:8000/api/'
+  const URL = 'http://codedegg.com/api/'
   import Snackbar from '../Snackbar'
   export default {
     components: {
@@ -91,7 +91,7 @@
     methods: {
       onSubmit () {
         this.loading = true
-        this.$http.post('http://codedegg.com/api/signin',
+        this.$http.post(URL+'signin',
             { email: this.email, password: this.pass },
             )
             .then(
