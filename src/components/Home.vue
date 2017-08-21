@@ -22,7 +22,7 @@
        <v-carousel>
           <v-carousel-item
             v-for="(item,i) in post.photos"
-            v-bind:src="`http://127.0.0.1:8000/gallery/posts/thumbs/${item.photo}`"
+            v-bind:src="`http://codedegg.com/gallery/posts/thumbs/${item.photo}`"
             :key="i">
           </v-carousel-item>
         </v-carousel>
@@ -105,7 +105,7 @@
     },
     methods: {
       getPosts () {
-        const URL = 'http://127.0.0.1:8000/api/'
+        const URL = 'http://codedegg.com/api/'
         this.$http.get(URL + 'meals')
         .then(response => {
           console.log(response)
@@ -119,12 +119,12 @@
       },
       getPhoto (photo) {
         if (photo) {
-          return 'http://127.0.0.1:8000/gallery/posts/thumbs/' + photo
+          return 'http://codedegg.com/gallery/posts/thumbs/' + photo
         }
       },
       getThumb (photo) {
         if (photo) {
-          return 'http://127.0.0.1:8000/gallery/user/thumbs/' + photo
+          return 'http://codedegg.com/gallery/user/thumbs/' + photo
         }
       },
       foodType (val) {
