@@ -2,7 +2,7 @@
   <v-list-tile avatar>
     <v-list-tile-avatar>
       <v-icon grey class="grey grey lighten-1 white--text" v-if="!post.photos">folder</v-icon>
-      <img v-bind:src="getPhoto(post.photos)" v-bind:alt="post.title" v-if="post.photos" />
+      <img v-bind:src="getPhoto(post.photos)" v-bind:alt="post.title" v-if="post.photos.length" />
     </v-list-tile-avatar>
     <v-list-tile-content>
       <v-list-tile-title>
@@ -43,7 +43,7 @@
         this.$emit('deletePost', this.post.id)
       },
       getPhoto (photo) {
-        if (photo) {
+        if (photo.length > 0) {
           return 'http://codedegg.com/gallery/posts/thumbs/' + photo[0].photo
         }
       }
