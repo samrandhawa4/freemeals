@@ -90,9 +90,9 @@
         this.paginate.path = paginate.path
       },
       getPosts (page) {
-        let pageUrl = URL + 'posts?token=' + token
+        let pageUrl = URL + 'mymeals?token=' + token
         if (page) {
-          pageUrl = URL + 'posts?page=' + page + '&token=' + token
+          pageUrl = URL + 'mymeals?page=' + page + '&token=' + token
         }
         this.$http.get(pageUrl)
         .then(response => {
